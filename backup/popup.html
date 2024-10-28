@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marked Links</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .link-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .link-item input[type='color'] {
+        margin-left: 10px;
+      }
+      button {
+        margin-left: 10px;
+      }
+      #colorPickerLabel {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Marked Links</h2>
+
+    <!-- Color Picker for Auto Color Selection -->
+    <label id="colorPickerLabel">Select Default Color:</label>
+    <input type="color" id="defaultColorPicker">
+
+    <div id="linkList"></div> <!-- List of marked links will be displayed here -->
+
+    <script src="popup.js"></script>
+  </body>
+</html>
